@@ -57,7 +57,7 @@ and orders:
 |--|--|--|--|
 |order_time|  S  | M | L |
 |2023-04-10 12:50:00| 2 | 1 | 4 |
-|2023-04-11 11:00:00| 1 | 3 | 1 |
+|2023-04-10 11:00:00| 1 | 3 | 1 |
 
 the query should return the following table
 NULL
