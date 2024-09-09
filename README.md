@@ -26,29 +26,37 @@ Write an PostgreSQL query that finds the time of the first order that cannot be 
 
 Example:
 1. For the given tables warehouses:
+|  |  |  |    
+|--|--|--|
 | S| M| L|
 |10|15|12|
 and orders:
+|  |  |  |  | 
+|--|--|--|--|
 |order_time|  S  | M | L |
 |2023-05-10 10:00:00| 1 | 1 | 1 |
-2023-05-10 10:00:00       2           3         4
-2023-05-10 12:00:00       5           2         1
-2023-05-12 10:00:00       1           1         4
-2023-05-13 10:00:00       1           2         3
-2023-05-14 10:00:00       1           1         1
-2023-05-14 11:00:00       1           1         1
+|2023-05-10 11:00:00| 2 | 3 | 4 |
+|2023-05-10 12:00:00| 5 | 2 | 1 |
+|2023-05-12 10:00:00| 1 | 1 | 4 |
+|2023-05-13 10:00:00| 1 | 2 | 3 |
+|2023-05-14 10:00:00| 1 | 1 | 1 |
+|2023-05-14 11:00:00| 1 | 1 | 1 |
 
 the query should return the following table:
 2023-05-13 10:00:00
 After the first four orders there is one small shirt, eight medium shirts and two large shirts left in the warehouse. In the fifth order, there large shirts are required. As there are only two remaining., this order cannot be completed.
 2. For the given tables warehouse:
-S          M           L
-3          4           5
+|  |  |  |    
+|--|--|--|
+| S| M| L|
+| 3| 4| 5|
 
 and orders:
-order_time                       S          M         L
-2023-04-10 12:50:00       2           1         4
-2023-04-10 11:00:00       1           3         1
+|  |  |  |  | 
+|--|--|--|--|
+|order_time|  S  | M | L |
+|2023-04-10 12:50:00| 2 | 1 | 4 |
+|2023-04-11 11:00:00| 1 | 3 | 1 |
 
 the query should return the following table
 NULL
