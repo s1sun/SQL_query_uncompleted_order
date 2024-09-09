@@ -2,14 +2,12 @@
 You are given two tables, warehouses and orders, with the following structures:
 
     Warehouse
-|    |                 |
 | ---| ----------------|
 | S  | integer Not NULL|
 | M  | integer Not NULL|
 | L  | integer Not NULL|
 
    and  orders
-|    |                 |
 | ---| ----------------|
 |order_time|timestamp Not NULL UNIQUE|
 | S| integer Not NULL|
