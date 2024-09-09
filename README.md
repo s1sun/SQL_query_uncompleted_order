@@ -9,7 +9,6 @@ You are given two tables, warehouses and orders, with the following structures:
 | L  | integer Not NULL|
 
     and  orders
-
 |    |                 |
 | ---| ----------------|
 |order_time|timestamp Not NULL UNIQUE|
@@ -66,8 +65,8 @@ and orders:
 |2023-04-10 12:50:00| 2 | 1 | 4 |
 |2023-04-10 11:00:00| 1 | 3 | 1 |
 
-the query should return the following table
-NULL
+the query should return the following table:
+    NULL
 
 There are enough shirts of each size to complete all orders.      
 
