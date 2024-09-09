@@ -46,7 +46,9 @@ and orders:
 |2023-05-14 11:00:00| 1 | 1 | 1 |
 
 the query should return the following table:
+
 2023-05-13 10:00:00
+
 After the first four orders there is one small shirt, eight medium shirts and two large shirts left in the warehouse. In the fifth order, there large shirts are required. As there are only two remaining., this order cannot be completed.
 2. For the given tables warehouse:
 
