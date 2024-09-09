@@ -32,6 +32,7 @@ Example:
 |10|15|12|
 
 and orders:
+
 |  |  |  |  | 
 |--|--|--|--|
 |order_time|  S  | M | L |
