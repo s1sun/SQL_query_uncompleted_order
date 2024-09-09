@@ -8,7 +8,8 @@ You are given two tables, warehouses and orders, with the following structures:
 | M  | integer Not NULL|
 | L  | integer Not NULL|
 
-   and  orders
+    and  orders
+
 |    |                 |
 | ---| ----------------|
 |order_time|timestamp Not NULL UNIQUE|
