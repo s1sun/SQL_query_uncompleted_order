@@ -2,17 +2,19 @@
 You are given two tables, warehouses and orders, with the following structures:
 
     Warehouse
-|Size| Reminder        |
+|    |                 |
 | ---| ----------------|
 | S  | integer Not NULL|
 | M  | integer Not NULL|
 | L  | integer Not NULL|
 
    and  orders
-order_time     timestamp Not NULL UNIQUE
-S    integer Not NULL
-M   integer Not NULL
-L     integer Not NULL
+|    |                 |
+| ---| ----------------|
+|order_time|timestamp Not NULL UNIQUE|
+| S| integer Not NULL|
+| M| integer Not NULL|
+| L| integer Not NULL|
 
 Table warehouses contains exactly one row describing the number of available shorts in the corresponding size: small(S), medium(M) and large(L).
 Each row of the table orders contains information about individual orders: the unique time the order was created (order_time) and the number of ordered shirts in the corresponding sizes: small(S), medium(M) and large(L). No two rows have the same order_time.
