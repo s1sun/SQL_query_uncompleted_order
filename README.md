@@ -64,5 +64,6 @@ NULL
 
 There are enough shirts of each size to complete all orders.      
 
--- Implement your solution here
+-- Implement your solution here:
+
 SELECT
