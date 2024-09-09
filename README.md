@@ -66,6 +66,7 @@ and orders:
 |2023-04-10 11:00:00| 1 | 3 | 1 |
 
 the query should return the following table:
+
     NULL
 
 There are enough shirts of each size to complete all orders.      
