@@ -33,7 +33,7 @@ WITH temp AS (
     FROM world.orders
 )
 SELECT 
-    order_time, warehouse.S, warehouse.M, warehouse.L
+    order_time, temp.S, temp.M, temp.L
 FROM temp, world.warehouse
 WHERE
     cum_s > warehouse.S OR 
@@ -43,6 +43,7 @@ ORDER BY order_time
 LIMIT 1;
 
 -- update table world.warehouse
+-- delete from world.warehouse;
 update world.warehouse set S=2, M=3, L=4 where S=10;
 select * from world.warehouse;
 -- delete all rows from table world.orders
@@ -62,7 +63,7 @@ WITH temp AS (
     FROM world.orders
 )
 SELECT 
-    order_time, warehouse.S, warehouse.M, warehouse.L
+    order_time, temp.S, temp.M, temp.L
 FROM temp, world.warehouse
 WHERE
     cum_s > warehouse.S OR 
