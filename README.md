@@ -71,6 +71,19 @@ the query should return the following table:
 
 There are enough shirts of each size to complete all orders.      
 
--- Implement your solution here:
+-- Implement my solution here:
 
-    SELECT
+    WITH temp AS (
+        SELECT 
+            order_time, S, M, L, 
+            sum(S) OVER (IRDER BY order_time) AS cum_s,
+            sum(M) OVER (IRDER BY order_time) AS cum_m,
+            sum(L) OVER (IRDER BY order_time) AS cum_l
+        FROM orders
+    )
+    SELECT order_time, temp.S, temp.M, temp.L 
+    FROM temp, warehouse 
+    WHERE
+        cum_s > warehouse.S or cum_m > warehouse.M or cum_l > warehouse.L
+    ORDER BY order_time
+    LIMIT 1;
